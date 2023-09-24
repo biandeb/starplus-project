@@ -133,7 +133,7 @@ export const cargarTabla = () => {
   tbody.innerHTML = "";
 
   pOS.forEach((peliculaOSerie, indice) => {
-    crearFilaTabla(peliculaOSerie, indice);
+    crearFilaTabla(peliculaOSerie, indice+1);
   });
 };
 

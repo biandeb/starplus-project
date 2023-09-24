@@ -12,8 +12,8 @@ export const agregarCategoriaALS = (nuevaCategoria)=>{
         localStorage.setItem("categorias",JSON.stringify(categorias))
 }
 export const crearFilaTablaCat = (categoria,indice) =>{
-    const tbody =document.getElementById("tbody-categoria")
-    const tr = document.createElement("tr")
+const tbody = document.getElementById("tbody-categoria")
+const tr = document.createElement("tr")
 const  tdIndice = document.createElement("td")
 
 tdIndice.innerText = indice;
@@ -49,19 +49,19 @@ tr.appendChild(tdIndice)
   tdBotones.appendChild(btnEliminar);
 
   tr.appendChild(tdBotones);
-//  
+
     tbody.appendChild(tr)
 }
 
 export const tablaCat = ()=>{
-    const categoria = obtenerCategoriaDeLS()
+const categoria = obtenerCategoriaDeLS()
 const tbody = document.getElementById("tbody-categoria")
 
 tbody.innerHTML ="";
 
 
     categoria.forEach((categoria, indice)=>{
-        crearFilaTablaCat(categoria,indice)
+        crearFilaTablaCat(categoria,indice+1)
     })
 }
 

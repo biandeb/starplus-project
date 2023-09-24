@@ -1,6 +1,6 @@
 'use strict'
 
-import { Contacto } from "./ContactoReg.js";
+import { Contacto } from "./Contacto.js";
 import { agregarContactoALS } from "./registerUtils.js";
 
 
@@ -10,7 +10,7 @@ agregarContactoALS(nuevoContacto);
 
 swal.fire({
     title: 'Éxito',
-    text: 'Contacto, agregado exitosamente',
+    text: 'Contacto agregado exitosamente',
     icon: 'success',
 
 });
