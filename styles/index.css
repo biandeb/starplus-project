@@ -22,37 +22,43 @@ body{
     background-color: #fc3c36;
 }
 
+.boton-editar{
+    background-color: #281414;
+    color: #f9f9f9;
+
+    &:hover{
+        background-color: #a17575;
+    color: #f9f9f9;
+    }
+}
+
+.boton-destacar{
+    background-color: #3c0028;
+    color: #f9f9f9;
+
+    &:hover{
+        background-color: #b47098;
+        color: #f9f9f9;
+    }
+}
+
+.boton-eliminar{
+    background-color: #fc3c36;
+    color: #f9f9f9;
+
+    &:hover{
+        background-color: #e97e7e;
+        color: #f9f9f9;
+    }
+}
+
+
+
 .imgTitulo{
     position: absolute;
     margin-top: 70px;
     margin-left: 10px;
     width: 300px;
-}
-
-
-@media (max-width:576px){
-    .imgTitulo{
-        display: none;
-        
-       
-    }
-}
-@media (min-width:768px){
-    .imgTitulo{
-        margin-top: 100px;
-        width: 400px;
-       
-    }
-}
-
-
-@media (min-width:1200px){
-    .imgTitulo{
-        margin-top: 100px;
-        margin-left: 40px;
-        width: 500px;
-       
-    }
 }
 
 
@@ -87,4 +93,29 @@ body{
 
 .acordeonColor {
     background: #35313f;
+}
+
+@media (max-width:576px){
+    .imgTitulo{
+        display: none;
+        
+       
+    }
+}
+@media (min-width:768px){
+    .imgTitulo{
+        margin-top: 100px;
+        width: 400px;
+       
+    }
+}
+
+
+@media (min-width:1200px){
+    .imgTitulo{
+        margin-top: 100px;
+        margin-left: 40px;
+        width: 500px;
+       
+    }
 }

@@ -92,9 +92,9 @@ export const crearFilaTabla = (peliculaOSerie, indice) => {
   btnEditar.type = "button";
   btnEliminar.type = "button";
   btnDestacar.type = "button";
-  btnEditar.classList.add("btn", "btn-warning", "btn-sm", "me-2");
-  btnEliminar.classList.add("btn", "btn-danger", "btn-sm", "me-2");
-  btnDestacar.classList.add("btn", "btn-danger", "btn-sm");
+  btnEditar.classList.add("btn", "btn-sm", "me-2", "boton-editar");
+  btnEliminar.classList.add("btn", "btn-sm", "me-2", "boton-eliminar");
+  btnDestacar.classList.add("btn", "btn-sm", "boton-destacar");
   btnEditar.innerText = "Editar";
   btnEliminar.innerText = "Eliminar";
   btnDestacar.innerText = "Destacar";

@@ -9,7 +9,7 @@ agregarPeliculasOSeriesALS(nuevaPOS);
 
     swal.fire({
         title:"Exito",
-        text: "Se guardo de manera exitosa",
+        text: "Se guardó de manera exitosa",
         icon:"success",
     })
 };
@@ -21,7 +21,7 @@ const peliculaOSerie = obtenerPeliculasOSeriesDeLS();
 if(!codigo){
     swal.fire({
         title: "Error",
-        text:"No se encontro",
+        text:"No se encontró",
         icon: "Error",
     })
     return;
@@ -32,7 +32,7 @@ const posicionpeliculaOSerie = peliculaOSerie.findIndex(
 if(posicionpeliculaOSerie === -1){
     swal.fire({
         title: "Error",
-        text:"No se encontro",
+        text:"No se encontró",
         icon: "Error",
     })
 }
@@ -41,8 +41,8 @@ peliculaOSerie.splice(posicionpeliculaOSerie,1,pelicilaOSerieEditada)
 
 localStorage.setItem("peliculasSeries", JSON.stringify(peliculaOSerie))
 swal.fire({
-    title: "Exito",
-    text:"Se modifico con exito",
+    title: "Éxito",
+    text:"Se modificó con éxito",
     icon: "success",
 })
 
@@ -53,12 +53,12 @@ sessionStorage.removeItem("codigoPeliculaOSerie")
 export const eliminarPeliculasSerie = (codigo) => {
 swal
 .fire({
-    title:"¿Estas seguro?",
+    title:"¿Estás seguro?",
     text:"Esta opción no será reversible",
     icon:"warning",
     showCancelButton: true,
     cancelButtonText:"Cancelar",
-    confirmButtonText:"Si, eliminar",
+    confirmButtonText:"Sí, eliminar",
     })
     .then((action)=>{
         if(action.isConfirmed){
@@ -72,7 +72,7 @@ swal
 
                 swal.fire({
                     title: "Exito",
-                    text:"Se elimino con exito",
+                    text:"Se eliminó con éxito",
                     icon: "success",
                 })
                 cargarTabla();
@@ -102,13 +102,13 @@ export const destacarPeliculasSerie = (codigo) => {
     if (estabaDestacada) {
       swal.fire({
         title: "Éxito",
-        text: "Se desdestacó la película/serie",
+        text: "Se destacó exitosamente",
         icon: "success",
       });
     } else {
       swal.fire({
         title: "Éxito",
-        text: "Se quito el destacado de la película/serie",
+        text: "Se quitó el destacado de la película/serie",
         icon: "success",
       });
     }
